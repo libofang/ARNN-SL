@@ -196,11 +196,11 @@ if __name__ == '__main__':
 
     s = {
         'verbose': 2,
-        'dataset' : 'chunk', # pos, chunk, ner, atis
+        'dataset' : 'ner', # pos, chunk, ner, atis
         'fold': 3,  # 5 folds 0,1,2,3,4  used only for atis
         'h_win': (0, 0),    # (0, 0) for standard RNN.
-        'emb_dimension': 100,  # dimension of word embedding
-        'nhidden': 100,  # number of hidden units
+        'emb_dimension': 25,  # dimension of word embedding
+        'nhidden': 25,  # number of hidden units
         'seed': 123,
         'nepochs': 30,
         'dropRate': 0.2,
