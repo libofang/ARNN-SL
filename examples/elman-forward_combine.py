@@ -38,7 +38,7 @@ def run(s) :
 
 
     train_lex, train_ne, train_y = train_set
-    valid_lex, valid_ne, valid_y = test_set# valid_set
+    valid_lex, valid_ne, valid_y = valid_set
     test_lex, test_ne, test_y = test_set
 
     vocsize = len(dic['words2idx'])
@@ -215,9 +215,9 @@ if __name__ == '__main__':
                                  '201308_p_word_dependency-1_', '201308_p_structured_dependency-1_']:
 
                 model = 'skip'
-                emb_dimension = 100
+                emb_dimension = 25
                 WVFolderName = ['201308_p_word_linear-2_' , '201308_p_structured_linear-2_' ,
-                                 '201308_p_word_dependency-1_', '201308_p_structured_dependency-1_'][3]
+                                 '201308_p_word_dependency-1_', '201308_p_structured_dependency-1_'][0]
 
                 s['WVFolderName'] = WVFolderName + model
                 s['model'] = 'sgns'
@@ -227,3 +227,4 @@ if __name__ == '__main__':
                 s['emb_dimension'] = emb_dimension
                 run(s)
 
+                break
