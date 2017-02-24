@@ -1,5 +1,7 @@
 # ARNN-SF
 
+__Please note that this code is for python 2.x only.__
+
 See the main function of examples/elman-forward_combine.py
 
 toy pre-trained word embeddings:
